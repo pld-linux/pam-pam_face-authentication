@@ -1,10 +1,11 @@
 Summary:	This is Pluggable Authentication Module for Face based Authentication
+Summary(pl.UTF-8):	Modularny system uwierzytelniania PAM opearty o weryfikację twarzy.
 Name:		pam-pam_face-authentication
 Version:	0.3
-Release:	0.1
+Release:	0.2
 License:	GPL
 Group:		Applications/System
-URL:		http://www.pam-face-authentication.org/
+URL:		http://www.pam-face-authentication.org
 Source0:	http://pam-face-authentication.googlecode.com/files/pam-face-authentication-%{version}.tar.gz
 # Source0-md5:	5ef71bcf4bdebd2ee7216387ef17fc27
 BuildRequires:	gsl-devel
@@ -17,7 +18,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 This is Pluggable Authentication Module for Face based Authentication.
-
+%description -l pl.UTF-8
+Modularny system uwierzytelniania PAM opearty o weryfikację twarzy.
 %prep
 %setup -q -n pam-face-authentication-%{version}
 
