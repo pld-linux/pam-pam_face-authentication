@@ -26,7 +26,7 @@ Modularny system uwierzytelniania PAM opearty o weryfikację twarzy.
 
 %prep
 %setup -q -n pam-face-authentication-%{version}
-%patch0 -p1
+%patch -P0 -p1
 
 # use cmake file provided by opencv-devel
 rm cmake/modules/FindOpenCV.cmake
